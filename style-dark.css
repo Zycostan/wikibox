@@ -1,0 +1,32 @@
+/* Dark mode CSS */
+* {
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #141414;
+}
+
+textarea {
+  height: 200px;
+  background-color: #333333;
+  color: #ffffff;
+}
+
+/* Title */
+h1 {
+  font-size: 48px;
+  text-align: center;
+  padding: 60px 0;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Zyc's Wikibox Editor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="logo-container">
+    <img src="logo.png" alt="Wikibox Editor logo">
+  </div>
+  <h1>Wikibox Editor</h1>
+
+  <<form id="wikibox-form" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="battlename">Battlename:</label>
+      <input type="text" id="battlename" name="battlename" required>
+    </div>
+    <div class="form-group">
+      <label for="warname">Warname/Campaign-name:</label>
+      <input type="text" id="warname" name="warname" required>
+    </div>
+    <div class="form-group">
+      <label for="image">Battle Image:</label>
+      <input type="file" id="image" name="image" required>
+    </div>
+    <div class="form-group">
+      <label for="image-description">Image Description:</label>
+      <input type="text" id="image-description" name="image-description" required>
+    </div>
+    <div class="form-group">
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required>
+    </div>
+    <div class="form-group">
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" required>
+    </div>
+    <div class="form-group">
+      <label for="result">Result:</label>
+      <textarea id="result" name="result" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="belligerents-left">Belligerents Left:</label>
+      <input type="text" id="belligerents-left" name="belligerents-left" required>
+    </div>
+    <div class="form-group">
+      <label for="belligerents-right">Belligerents Right:</label>
+      <input type="text" id="belligerents-right" name="belligerents-right" required>
+    </div>
+    <div class="form-group">
+      <label for="leaders-left">Leaders Left:</label>
+      <input type="text" id="leaders-left" name="leaders-left" required class="left-leaders">
+    </div>
+    <div class="form-group">
+      <label for="leaders-right">Leaders Right:</label>
+      <input type="text" id="leaders-right" name="leaders-right" required class="right-leaders">
+    </div>
+    <div class="form-group">
+      <label for="strength-left">Strength Left:</label>
+      <textarea id="strength-left" name="strength-left" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="strength-right">Strength Right:</label>
+      <textarea id="strength-right" name="strength-right" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="losses-left">Losses Left:</label>
+      <textarea id="losses-left" name="losses-left" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="losses-right">Losses Right:</label>
+      <textarea id="losses-right" name="losses-right" required></textarea>
+    </div>
+    
+    <div class="form-group">
+      <hr>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="create-wikibox-btn">Create Wikibox</button>
+    </div>
+  </form>
+
+  <div id="mode-toggle">
+    <label for="mode">Dark Mode:</label>
+    <input type="checkbox" id="mode" name="mode">
+  </div>
+
+  <div id="wikibox-preview"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,323 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 0;
+  padding: 0;
+  color: #333333;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+textarea {
+  height: 200px;
+}
+
+/* Title */
+h1 {
+  font-size: 48px;
+  text-align: center;
+  padding: 60px 0;
+  margin: 0;
+  text-shadow: 2px 2px rgba(255, 255, 255, 0.2);
+  color: #141414;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  -webkit-text-stroke: 2px #ffffff;
+  text-stroke: 2px #ffffff;
+}
+
+.logo-container {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+}
+
+.logo-container img {
+  height: 80px;
+}
+
+header {
+  background-color: #141414 url(images/pixels.jpg) no-repeat center top;
+  background-size: cover;
+  text-align: center;
+  color: #141414;
+  padding: 100px 0;
+  font-family: Courier New, monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+header::before {
+  content: "";
+  background-image: url("images/pixels.jpg");
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="file"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-group button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.wikibox {
+  max-width: 600px;
+  margin: 20px auto;
+  border: 1px solid #a2a9b1;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #f8f9fa;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.wikibox-header {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-bottom: 1px solid #a2a9b1;
+  font-family: "Roboto", sans-serif;
+}
+
+.wikibox-header h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+.wikibox-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal;
+  font-family: "Roboto", sans-serif;
+}
+
+.wikibox-image {
+  position: relative;
+}
+
+.wikibox-image img {
+  width: 100%;
+  height: auto;
+}
+
+.wikibox-image p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 5px;
+  margin: 0;
+  font-size: 12px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-top-right-radius: 5px;
+  font-style: italic;
+}
+
+.wikibox-details {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wikibox-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid #ccc; /* add border-right for left side */
+  padding: 10px;
+  margin-bottom: 10px; /* add margin */
+  flex-basis: 50%;
+}
+
+.wikibox-leaders {
+  flex-basis: 100%;
+}
+
+.wikibox-detail-leaders {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wikibox-detail-leaders div {
+  width: 48%;
+}
+
+.wikibox-detail-leaders h5 {
+  margin-top: 0;
+}
+
+.wikibox-detail-leaders p {
+  margin-bottom: 0;
+}
+
+/* center text in the "Commanders and Leaders" section */
+.wikibox-detail p {
+  text-align: center;
+}
+
+/* add border-left for right side */
+.wikibox-detail:last-of-type {
+  border-right: none;
+  border-left: 1px solid #ccc;
+}
+
+.leaders {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-leaders, .right-leaders {
+  flex: 1;
+  text-align: center;
+}
+
+.wikibox-detail h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #0645ad;
+}
+
+.wikibox-detail p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.wikibox-detail p:last-child {
+  margin-bottom: 0;
+}
+
+.wikibox-detail h4::after {
+  content: ":";
+}
+
+.wikibox-detail:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.wikibox-detail:nth-child(even) h4 {
+  color: #54595d;
+}
+
+.wikibox-detail:nth-child(even) p {
+  color: #54595d;
+}
+
+.wikibox-detail:nth-child(even) h4::after {
+  content: "";
+}
+
+@media screen and (max-width: 768px) {
+  .wikibox {
+    max-width: 100%;
+    margin: 20px 0;
+  }
+
+  .wikibox-details {
+  text-align: center;
+  }
+  
+  .wikibox-detail h4 {
+   text-align: center;
+  }
+
+
+  .wikibox-detail p {
+    font-size: 12px;
+  }
+
+  .wikibox-image p {
+    font-size: 10px;
+  }
+}
+
+canvas {
+  display: none;
+}
+
+.mode-switch {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.mode-switch label {
+  margin-right: 10px;
+}
+
+.mode-switch input[type="checkbox"] {
+  appearance: none;
+  width: 40px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 20px;
+  position: relative;
+  outline: none;
+  transition: background-color 0.2s ease;
+}
+
+.mode-switch input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.2s ease;
+}
+
+.mode-switch input[type="checkbox"]:checked {
+  background-color: #2196F3;
+}
+
+.mode-switch input[type="checkbox"]:checked::before {
+  transform: translateX(20px);
+}
+
